@@ -1,4 +1,4 @@
-**What is abstraction?**
+## What is abstraction?
 Abstraction is hiding the information or providing only necessary details to the client.
 
 That enables the user to implement more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden complexity.
