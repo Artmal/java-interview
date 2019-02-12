@@ -1,22 +1,8 @@
 ## How Group By works?
-The GROUP BY statement is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
+Group BY groups rows sharing a property so that an aggregate function( AVG, COUNT, MIN, MAX, SUM)  can be applied to each group.
 
-Suppose you have the following tables:
-Users
-|ID| username |
-|--|--|
-| 1 | Artmal |
-| 2 | Travian boy|
-| 3 | Lagger |
+Unfortunately, some SQL Implementations allow GROUP BY  _without_  an aggregate function1.
 
-User Roles
-|user_id| role |
-|--|--|
-| 1 | Admin |
-| 2 | User |
-| 3 | User |
+In this case the result is "not defined / implementation defined" - see the specific implementation documentation to see if it provides any guarantees. 
 
-Count the amount of each role.
-
-Answer:
-SELECT ur.role, COUNT(ur.role) FROM user_roles ur INNER JOIN users ON ur.user_id = users.id GROUP BY ur.role;
+For increased compatibility and predictable results,  **_use an aggregate function_** _for every field which is not covered by the GROUP BY_  -  _even if_  the particular SQL/RDBMS does not enforce or "require" the use aggregates.
