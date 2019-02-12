@@ -1,5 +1,5 @@
 ## How Group By works?
-Group BY groups rows sharing a property so that an aggregate function( AVG, COUNT, MIN, MAX, SUM)  can be applied to each group.
+Group BY groups rows sharing a property so that an aggregate function(AVG, COUNT, MIN, MAX, SUM)  can be applied to each group.
 
 Unfortunately, some SQL Implementations allow GROUP BY  _without_  an aggregate function1.
 
