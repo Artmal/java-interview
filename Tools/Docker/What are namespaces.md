@@ -1,0 +1,2 @@
+## What are namespaces?
+**Namespaces** are one of a feature in the Linux Kernel and fundamental aspect of containers on Linux.On the other hand namespaces provide a layer of isolation.Docker uses namespaces of various kinds to provide the isolation that containers need in order to remain portable and refrain from affecting the remainder of the host system.Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
