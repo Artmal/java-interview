@@ -1,5 +1,5 @@
 ## What are Amazon Web Services?
-Amazon Web Services(AWS) is a platform of web services that offers solutions for computing, storing, and networking, at a different layers of abstraction. 
+**Amazon Web Services(AWS)** is a platform of web services that offers solutions for computing, storing, and networking, at a different layers of abstraction. 
 
 You can use these services to host websites, run enterprise applications, and mine tremendious amounts of data. 
 
